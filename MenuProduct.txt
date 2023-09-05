@@ -1,0 +1,6 @@
+-----------------MENU---------------------
+1.InsertRecord
+2.DeleteRecord
+3.UpdateRecord
+4.ReadAllRecords
+5.GetAllRecords
