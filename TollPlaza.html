@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width-device-width",initial-scale=1.0">
+    <title>Navayuga Infrastructure</title>
+    <link rel="stylesheet" href="../CSS/mainStyle.css"/>
+    <script>
+        function Add() {
+            //get the reference of the input, use a property called value and store it.
+            let regno=document.getElementById("txtName").value;
+            let displayArea = document.getElementById("statistics");
+            displayArea.innerHTML = "The regno is " + regno + "<br/>";
+        }
+    </script>
+    <!-- <script src="../HTML/js/TollPlaza.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    </head>
+    <body>
+        <hr/>
+        <h1>Navayuga Infrastructure</h1>
+        <hr/>
+        <div class="container">
+            <p>
+            <h2>Vehicle Entry</h2>
+            <select id="vehicle-type">
+             <option value="Bike">Bike</option>
+             <option value="LMV">LMV</option>
+             <option value="HMV">HMV</option>
+             <option value="Heavy Trucks">Heavy Trucks</option>
+            </select>
+            <p>Enter the Registration no:<input type="text" id="txtName" placeholder="Enter the Registration no"/></p>
+            <p>
+                <button id="btnSubmit" onClick="Add()">Submit</button>
+            </p>
+        </div>
+        
+        <div class="statistics1">
+            <h2>Statistics</h2>
+            <p id="statistics">
+            </p>
+        </div>
+        <div class="container1">
+            <p>
+            <h2>Search</h2>
+            <p>Filter by category</p>
+            <select id="searchCat">
+                <option value="">All</option>
+                <option value="Bike">Bike</option>
+                <option value="LMV">LMV</option>
+                <option value="HMV">HMV</option>
+                <option value="Heavy Trucks">Heavy Trucks</option>
+            </select>
+            <p>Search reg-no</p><input type="text" id="searchreg">
+            <button id="search">Search</button>
+            </p>
+        </div>
+      
+    </body>
+    </html>
